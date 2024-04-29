@@ -4,3 +4,5 @@ window.addEventListener("message", (event) => {
         iframe.height = event.data.value + "px";
     }
 }, false);
+
+console.log("e");
