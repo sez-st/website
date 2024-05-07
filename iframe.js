@@ -1,6 +1,6 @@
 window.addEventListener("message", (event) => {
     if (event.data.type === "resize") {
         const iframe = document.querySelector("iframe");
-        iframe.height = event.data.value + "px";
+        iframe.style = `max-height: ${event.data.value + 100}px`;
     }
 }, false);
